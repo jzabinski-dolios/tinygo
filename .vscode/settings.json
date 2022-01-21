@@ -1,0 +1,8 @@
+{
+    "go.goroot": "/usr/local/go/",
+    "go.gopath": "/Users/home/go/",
+    "go.toolsEnvVars": {
+        "GOOS": "js",
+        "GOARCH": "wasm"
+    }
+}

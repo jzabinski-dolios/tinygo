@@ -18,6 +18,10 @@ slices: clean wasm_exec
 	cp ./slices/wasm.js ./html/
 	cp ./slices/index.html ./html/
 
+async: clean wasm_exec
+	tinygo build -o ./html/wasm.wasm -target wasm ./async/wasm.go
+	cp ./async/wasm.js ./html/
+	cp ./async/index.html ./html/
 
 main: clean wasm_exec
 	tinygo build -o ./html/wasm.wasm -target wasm -no-debug ./main/main.go
